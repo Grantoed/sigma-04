@@ -5,7 +5,7 @@
   "homepage": "https://Grantoed.github.io/sigma-hw-04",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /sigma-hw-04/"
   },
   "repository": {
     "type": "git",
