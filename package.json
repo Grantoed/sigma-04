@@ -1,5 +1,5 @@
 {
-  "name": "parcel-project-template",
+  "name": "sigma-hw-04",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://Grantoed.github.io/sigma-hw-04",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/Grantoed/sigma-hw-04.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Ruslan Babaiev <ruslan.nadirovich@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
