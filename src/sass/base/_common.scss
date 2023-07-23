@@ -1,0 +1,43 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $main-font;
+  color: $main-txt-color;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
