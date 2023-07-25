@@ -1,12 +1,17 @@
 $main-font: 'Roboto', sans-serif;
 $alt-font: 'Poppins', sans-serif;
 $quote-mark-font: 'Varela', sans-serif;
-
+$placeholder-font: 'Raleway', sans-serif;
 $main-txt-color: #212121;
 $alt-txt-color: #646464;
 $main-bg-color: #fff;
 $alt-bg-color: #f8f8f8;
-$main-accent-color: #37806b;
+$socials-bg-color: #d5d5d5;
+$separator-line-color: #c4c4c4;
+$main-accent-color: rgba(55, 128, 107, 1);
+$main-accent-hover-color: rgba(55, 128, 107, 0.9);
 $alt-accent-color: #caa892;
 $placeholder-bg-color: #eeeeee;
 $img-outline-color: #b0855b;
+
+$transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);

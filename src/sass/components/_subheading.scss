@@ -1,0 +1,10 @@
+.subheading {
+  font-family: $alt-font;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $alt-txt-color;
+  &_slim {
+    font-weight: 500;
+  }
+}

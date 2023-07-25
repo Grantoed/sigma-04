@@ -1,0 +1,80 @@
+.about {
+  .container {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+.about__wrapper {
+  display: flex;
+  gap: 130px;
+  &:last-of-type {
+    margin-top: 200px;
+  }
+}
+
+.about__text-wrapper {
+  max-width: 543px;
+}
+
+.subheading ~ .about__section-heading {
+  margin-top: 60px;
+}
+
+.about__text {
+  font-size: 18px;
+  line-height: 1.66;
+  color: $alt-txt-color;
+}
+
+.about__image-wrapper {
+  position: relative;
+  margin-left: 45px;
+  &_top::after {
+    content: '';
+    position: absolute;
+    top: -33px;
+    left: -33px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $img-outline-color;
+    border-radius: 140px 0px;
+    z-index: -1;
+  }
+  &_bottom::after {
+    content: '';
+    position: absolute;
+    bottom: -33px;
+    right: -33px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 2px solid $img-outline-color;
+    border-radius: 140px 0px;
+    z-index: -1;
+  }
+}
+
+.about__image {
+  width: 680px;
+  height: 711px;
+  border-radius: 140px 0px;
+}
+
+.about__button {
+  margin-top: 50px;
+}
+
+.about__number {
+  font-size: 288px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -2.88px;
+  color: transparent;
+  background-image: url('../images/dresser.webp');
+  background-clip: text;
+  background-size: 917px 961px;
+  background-repeat: no-repeat;
+  background-position: 20% 104%;
+}
