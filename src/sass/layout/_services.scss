@@ -23,11 +23,74 @@
   background-color: $main-accent-color;
   border: 5px solid $main-accent-color;
   border-radius: 20px;
+  outline: none;
   cursor: pointer;
-  transition: color $transition, background-color $transition;
-  &:hover,
-  &:focus {
+  // transition: color $transition, background-color $transition;
+  // &:hover,
+  // &:focus {
+  //   color: $main-bg-color;
+  //   background-color: $main-accent-hover-color;
+  // }
+  &_clicked {
     color: $main-accent-color;
     background-color: $main-bg-color;
   }
+}
+
+.service__posts-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 90px;
+  grid-row-gap: 45px;
+  margin-top: 90px;
+}
+
+.service__post {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 40px;
+  height: 160px;
+  background-color: $main-bg-color;
+  border-radius: 60px 0px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.14);
+  transition: background-color $transition;
+  cursor: default;
+  &:hover {
+    background-color: $alt-accent-color;
+
+    & .service__name {
+      color: $main-bg-color;
+    }
+    & .service__description {
+      color: $main-bg-color;
+    }
+    & .service__icon {
+      filter: brightness(100);
+    }
+  }
+}
+
+.service__name {
+  font-size: 24px;
+  font-weight: 700;
+  transition: all $transition;
+}
+
+.service__description {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: -0.18px;
+  color: $alt-txt-color;
+  transition: all $transition;
+}
+
+.service__icon {
+  width: 35px;
+  height: 35px;
+  filter: brightness(0.5);
+  transition: filter $transition;
 }

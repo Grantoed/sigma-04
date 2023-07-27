@@ -2,8 +2,7 @@
   position: sticky;
   top: 0;
   left: 0;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 30px;
   background-color: $main-bg-color;
   z-index: 10;
 }
@@ -59,4 +58,17 @@
   &:focus {
     background-color: $img-outline-color;
   }
+}
+
+.header__progress-container {
+  width: 100%;
+  height: 4px;
+  margin-top: 30px;
+  background-color: $alt-bg-color;
+}
+
+.header__progress-bar {
+  height: 4px;
+  background-color: $main-accent-color;
+  width: 0%;
 }
