@@ -5,13 +5,16 @@ let confirmTimeout;
 
 const refs = {
   body: document.body,
-  modal: document.querySelector('.backdrop'),
+  backdrop: document.querySelector('.backdrop'),
+  modalIdle: document.querySelector('.modal-idle'),
   yesBtn: document.querySelector('#yesBtn'),
 };
 
 function showModal() {
-  refs.modal.classList.remove('modal_hidden');
+  refs.backdrop.classList.remove('modal_hidden');
+  refs.modalIdle.classList.remove('modal_hidden');
   refs.body.classList.add('no-scroll');
+  refs.yesBtn.addEventListener('click', handleClickedYes);
   confirmTimeout = setTimeout(closeTab, 1000 * 15);
 }
 
@@ -22,20 +25,21 @@ function resetTimer() {
   }
 }
 
-function handleClickedYes() {
+function handleClickedYes(e) {
   clearTimeout(confirmTimeout);
   confirmTimeout = null;
-  refs.modal.classList.add('modal_hidden');
+  refs.backdrop.classList.add('modal_hidden');
+  refs.modalIdle.classList.add('modal_hidden');
   refs.body.classList.remove('no-scroll');
+  refs.yesBtn.removeEventListener('click', handleClickedYes);
   resetTimer();
 }
 
 function closeTab() {
   console.log('tab *closed*');
-  window.close();
+  // window.close();
 }
 
-refs.yesBtn.addEventListener('click', handleClickedYes);
 window.addEventListener(
   'mousemove',
   throttle(() => {

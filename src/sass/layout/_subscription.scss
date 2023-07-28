@@ -49,6 +49,16 @@
   width: 100%;
 }
 
+.subscription__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &_email {
+    width: 100%;
+    margin-top: 60px;
+  }
+}
+
 .subscription__input {
   width: 317px;
   height: 48px;
@@ -69,11 +79,14 @@
 
   &_wide {
     width: 100%;
-    margin-top: 60px;
   }
 }
 
 .subscription__button {
   margin-top: 90px;
   font-weight: 400;
+}
+
+.subscription__error {
+  color: $error-color;
 }

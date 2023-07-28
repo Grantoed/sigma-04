@@ -1,5 +1,4 @@
 const BASE_URL = 'https://sigma-hw-04.lm.r.appspot.com/api/service/';
-// const BASE_URL = 'localhost:8080/api/service/';
 
 export async function fetchAllServices({ page, limit }) {
   const savedServices = localStorage.getItem('all');

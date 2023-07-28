@@ -23,6 +23,11 @@
   padding: 20px 40px;
   background-color: $main-bg-color;
   border-radius: 30px;
+
+  &-discount {
+    width: 700px;
+    height: 400px;
+  }
 }
 
 .modal_hidden {
@@ -35,12 +40,13 @@
   font-weight: 600;
   text-align: center;
   text-transform: capitalize;
+  &_slim {
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: none;
+  }
 }
 
 .modal__button {
-  //   display: block;
   width: 150px;
-  //   margin-top: 80px;
-  //   margin-left: auto;
-  //   margin-right: auto;
 }

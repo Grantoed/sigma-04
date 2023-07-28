@@ -5,14 +5,21 @@
             <p class="subscription__text">Find out early about all upcoming promotions and new product releases with our
                 newsletter.</p>
         </div>
-        <form class="subscription__form" action="submit">
+        <form class="subscription__form" action="submit" novalidate>
             <div class="subscription__wrapper">
-                <input class="subscription__input" type="text" name="name" id="name" placeholder="Enter your name...">
-                <input class="subscription__input" type="text" name="surname" id="surname"
-                    placeholder="Enter your surname...">
+                <div class="subscription__input-wrapper subscription__input-wrapper_name">
+                    <input class="subscription__input" type="text" name="name" id="name"
+                        placeholder="Enter your name...">
+                </div>
+                <div class="subscription__input-wrapper subscription__input-wrapper_surname">
+                    <input class="subscription__input" type="text" name="surname" id="surname"
+                        placeholder="Enter your surname...">
+                </div>
             </div>
-            <input class="subscription__input subscription__input_wide" type="email" name="email" id="email"
-                placeholder="Enter your email...">
+            <div class="subscription__input-wrapper subscription__input-wrapper_email">
+                <input class="subscription__input subscription__input_wide" type="email" name="email" id="email"
+                    placeholder="Enter your email...">
+            </div>
             <button type="submit" class="button subscription__button">Subscribe</button>
         </form>
     </div>

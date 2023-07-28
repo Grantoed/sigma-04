@@ -4,3 +4,7 @@ import './js/progressBar';
 import './js/fetchServices';
 import './js/populateServices';
 import './js/idleChecker';
+import './js/newsObserver';
+import './js/formValidation';
+import './js/weatherAPI';
+import './js/weatherWidget';
