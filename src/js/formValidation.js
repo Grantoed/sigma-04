@@ -15,9 +15,9 @@ function showDiscountModal(message) {
   const { body, backdrop, confetti, modalDiscount, modalText, modalBtn } = refs;
 
   modalText.textContent = message;
-  backdrop.classList.remove('modal_hidden');
-  modalDiscount.classList.remove('modal_hidden');
-  confetti.classList.remove('modal_hidden');
+  backdrop.classList.remove('is-hidden');
+  modalDiscount.classList.remove('is-hidden');
+  confetti.classList.remove('is-hidden');
   body.classList.add('no-scroll');
   modalBtn.addEventListener('click', closeDiscountModal);
 }
@@ -25,9 +25,9 @@ function showDiscountModal(message) {
 function closeDiscountModal() {
   const { body, backdrop, confetti, modalDiscount, modalBtn } = refs;
 
-  backdrop.classList.add('modal_hidden');
-  modalDiscount.classList.add('modal_hidden');
-  confetti.classList.add('modal_hidden');
+  backdrop.classList.add('is-hidden');
+  modalDiscount.classList.add('is-hidden');
+  confetti.classList.add('is-hidden');
   body.classList.remove('no-scroll');
   modalBtn.removeEventListener('click', closeDiscountModal);
 }

@@ -9,7 +9,7 @@
   height: 100vh;
   background-color: $backdrop-color;
   backdrop-filter: blur(4px);
-  z-index: 4;
+  z-index: 3;
 }
 
 .modal {
@@ -30,10 +30,6 @@
   }
 }
 
-.modal_hidden {
-  display: none;
-}
-
 .modal__text {
   font-family: $alt-font;
   font-size: 42px;
@@ -49,4 +45,8 @@
 
 .modal__button {
   width: 150px;
+}
+
+.is-hidden {
+  display: none;
 }

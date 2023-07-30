@@ -1,4 +1,4 @@
-const BASE_URL = 'http://api.weatherapi.com/v1/current.json';
+const BASE_URL = 'https://api.weatherapi.com/v1/current.json';
 const API_KEY = '6c14be175ddd4d58b1f171256232807';
 
 async function getCoordinates() {

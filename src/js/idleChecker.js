@@ -2,19 +2,19 @@ import throttle from 'lodash.throttle';
 
 let idleTimeout;
 let confirmTimeout;
-
 const refs = {
   body: document.body,
   backdrop: document.querySelector('.backdrop'),
   modalIdle: document.querySelector('.modal-idle'),
   yesBtn: document.querySelector('#yesBtn'),
 };
+const { body, backdrop, modalIdle, yesBtn } = refs;
 
 function showModal() {
-  refs.backdrop.classList.remove('modal_hidden');
-  refs.modalIdle.classList.remove('modal_hidden');
-  refs.body.classList.add('no-scroll');
-  refs.yesBtn.addEventListener('click', handleClickedYes);
+  backdrop.classList.remove('is-hidden');
+  modalIdle.classList.remove('is-hidden');
+  body.classList.add('no-scroll');
+  yesBtn.addEventListener('click', handleClickedYes);
   confirmTimeout = setTimeout(closeTab, 1000 * 15);
 }
 
@@ -28,10 +28,10 @@ function resetTimer() {
 function handleClickedYes(e) {
   clearTimeout(confirmTimeout);
   confirmTimeout = null;
-  refs.backdrop.classList.add('modal_hidden');
-  refs.modalIdle.classList.add('modal_hidden');
-  refs.body.classList.remove('no-scroll');
-  refs.yesBtn.removeEventListener('click', handleClickedYes);
+  backdrop.classList.add('is-hidden');
+  modalIdle.classList.add('is-hidden');
+  body.classList.remove('no-scroll');
+  yesBtn.removeEventListener('click', handleClickedYes);
   resetTimer();
 }
 

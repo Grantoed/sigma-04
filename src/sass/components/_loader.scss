@@ -1,0 +1,85 @@
+.loader {
+  position: fixed;
+  top: 110px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 200px;
+  background-image: linear-gradient(-45deg, $main-accent-color, $alt-accent-color);
+  background-size: 200% 200%;
+  animation-name: gradient;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  z-index: 6;
+
+  &_hidden {
+    display: none;
+  }
+}
+
+.loader__title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.loader__title-part {
+  font-family: $placeholder-font;
+  font-size: 72px;
+  line-height: 78px;
+  animation-name: collide;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: forwards;
+}
+
+.loader__title-part_left {
+  color: $alt-txt-color;
+  transform: translateX(-100%);
+}
+
+.loader__title-part_right {
+  color: $main-bg-color;
+  transform: translateX(100%);
+}
+
+.loader__text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.loader__text {
+  color: $main-bg-color;
+  font-size: 24px;
+  transform: translateY(50px);
+  animation-name: emergeFromBottom;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: forwards;
+  opacity: 0;
+
+  &:nth-child(1) {
+    font-size: 32px;
+    font-style: italic;
+    transform: translateX(-50px);
+    animation-name: emergeFromLeft;
+  }
+
+  &:nth-child(2) {
+    margin-top: 15px;
+    animation-delay: 1s;
+  }
+
+  &:nth-child(3) {
+    margin-top: 15px;
+    animation-delay: 2s;
+  }
+}
