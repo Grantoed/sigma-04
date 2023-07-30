@@ -1,12 +1,14 @@
 .results {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   background-color: $alt-bg-color;
   .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 }
 
@@ -31,21 +33,51 @@
   background-color: $main-bg-color;
   border-radius: 40px 0px;
   box-shadow: 0px 13px 16px 0px rgba(0, 0, 0, 0.1);
-  &:nth-child(1) > .results__connector {
-    position: absolute;
-    bottom: -5px;
-    right: -265px;
+  &:nth-child(1) {
+    position: relative;
+    &::after {
+      content: '';
+      display: block;
+      width: 300px;
+      height: 96px;
+      position: absolute;
+      bottom: -5px;
+      right: -310px;
+      background-image: url('../images/connector.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
-  &:nth-child(2) > .results__connector {
-    position: absolute;
-    top: -5px;
-    right: -265px;
-    transform: scaleX(-1);
+  &:nth-child(2) {
+    position: relative;
+    &::after {
+      content: '';
+      display: block;
+      width: 300px;
+      height: 96px;
+      position: absolute;
+      bottom: 95px;
+      right: -225px;
+      transform: scaleX(-1);
+      background-image: url('../images/connector.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
-  &:nth-child(3) > .results__connector {
-    position: absolute;
-    bottom: -5px;
-    right: -265px;
+  &:nth-child(3) {
+    position: relative;
+    &::after {
+      content: '';
+      display: block;
+      width: 300px;
+      height: 96px;
+      position: absolute;
+      bottom: -5px;
+      right: -310px;
+      background-image: url('../images/connector.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
   &:nth-child(2n) {
     margin-top: 100px;

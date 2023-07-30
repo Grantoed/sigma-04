@@ -1,7 +1,19 @@
 .hero {
   .container {
+    position: relative;
     display: flex;
     padding-top: 90px;
+    padding-bottom: 90px;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 212px;
+      height: 150px;
+      background-image: url('../images/decor-wide.svg');
+    }
   }
 }
 

@@ -1,7 +1,28 @@
 .about {
   .container {
+    position: relative;
     padding-top: 90px;
     padding-bottom: 90px;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 280px;
+      right: 0;
+      display: block;
+      width: 212px;
+      height: 153px;
+      background-image: url('../images/decor-split.svg');
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 850px;
+      left: 240px;
+      display: block;
+      width: 212px;
+      height: 150px;
+      background-image: url('../images/decor-wide.svg');
+    }
   }
 }
 

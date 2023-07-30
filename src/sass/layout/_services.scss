@@ -1,6 +1,18 @@
 .service {
   .container {
+    position: relative;
     padding-top: 90px;
+    padding-bottom: 340px;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: block;
+      width: 245px;
+      height: 254px;
+      background-image: url('../images/decor-squared.svg');
+    }
   }
 }
 
@@ -25,12 +37,6 @@
   border-radius: 20px;
   outline: none;
   cursor: pointer;
-  // transition: color $transition, background-color $transition;
-  // &:hover,
-  // &:focus {
-  //   color: $main-bg-color;
-  //   background-color: $main-accent-hover-color;
-  // }
   &_clicked {
     color: $main-accent-color;
     background-color: $main-bg-color;
